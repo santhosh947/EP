@@ -3,11 +3,11 @@ public class Subarray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//int[] arr={-1,-1,-10,-6,-10};
-		int[] arr={-1,-2,2,-4,-9};
+		int[] arr={-1,1,10,-6,-10};
+		//int[] arr={-1,-2,-5,-4,-9};
 		
 		int max=0,prev_max=0;
-		int check_mark = 0;
+		int check_mark = arr[0]+arr[1];
 		boolean  in_negate=false;
 		int start_index=0,end_index=0;
 		int best_score=0, arr_score=0;
@@ -80,7 +80,7 @@ public class Subarray {
     	   for(int k=0;k<temp_arr.size();k++){
     		   arr_score+=(Integer)(temp_arr.get(k));
     	   }
-    	  if((check_mark<arr_score)){
+    	  if((check_mark<=arr_score)){
     		   output_arr=(ArrayList) temp_arr.clone();
     		   check_mark=best_score;
     	   }
