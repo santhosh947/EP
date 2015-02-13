@@ -16,6 +16,7 @@ public class Color {
 		System.out.println("\n" + isColorful(3245) +"\n");
 		System.out.println("\n"+ isColorful(326)+"\n");
 		System.out.print("\n"+ isColorful(3456789)+"\n"); 
+		System.out.print("\n" + isColorful(123)+"\n");
 	}
 
 	private static boolean isColorful(int i) {
