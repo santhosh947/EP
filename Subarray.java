@@ -92,7 +92,7 @@ public class Subarray {
     	   start_index=0;
     	   end_index=0;
        }
-       System.out.print("\n\n\n********** Final: " +output_arr);
+       System.out.print("\n\n\n " +output_arr);
 	}
 
 }
